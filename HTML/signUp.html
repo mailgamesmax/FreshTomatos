@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/homepage.css">
+    <title>SignUp new user</title>
+</head>
+<body>
+    <header class='header-style'></header>
+    <div class="main">
+
+        <h2>Vartotojo registracija</h2>
+        <form id="signUpForm">
+            <label for="inputName">Jūsų vardas:</label>
+            <input type="text" id="inputName" required><br>
+    
+            <label for="inputPassword">Sukurkite slaptažodį(min 6 simboliai iš raidžių ir skaičių):</label>
+            <input type="password" id="inputPassword" 
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required><br>
+    
+            <label for="inputEmail">Jūsų el.p.:</label>
+            <input type="email" id="inputEmail" required><br>
+    
+            <input type="submit" value="Registruotis!">
+        </form>
+
+    </div>
+    <script type="text/JAVASCRIPT" src="/JS/userSignUp.js"></script>
+</body>
+</html>
