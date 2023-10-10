@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/addNewMovie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class='header-style'></header>
+    <div class="main">
+        <div class="form-header">
+            <h1>Pridėkite naują filmą</h1>
+        </div>
+        <div class="form-container">
+            <form id="newMovie">
+                <label for="movieName">Pavadinimas</label><br>
+                <input type="text" id="movieName" required><br>
+        
+                <label for="movieRating">Reitingas</label><br>
+                <input type="number" id="movieRating" required><br>
+        
+                <label for="movieGenre">Žanras</label><br>
+                <input type="text" id="movieGenre" required><br>
+    
+                <label for="movieImage">Nuotraukos nuoroda</label><br>
+                <input type="text" id="movieImage" required><br>
+        
+                <input type="submit" id="sumbit-btn" value="Pridėti">
+            </form>
+        </div>
+    </div>
+    <script src="/JS/addNewMovie.js"></script>
+</body>
+</html>

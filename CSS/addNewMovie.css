@@ -1,0 +1,55 @@
+html, body{
+    height: 95%;
+    width: 99.5%;
+    font-family: 'Roboto', sans-serif;
+
+}
+.header-style{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 6%;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.main{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0.5%;
+    height: 90%;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.form-header{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+#newMovie{
+    border: 0.2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20%;
+    align-items: center;
+}
+input{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 6px;
+    border: 0.2px solid black;
+}
+#sumbit-btn{
+    padding: 5%;
+    width: 50%;
+    background-color: rgb(255, 159, 103);
+}
