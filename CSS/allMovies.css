@@ -23,7 +23,7 @@ html, body {
     width: 99.5%;
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/tomatoespls.png');
-    
+    background-attachment: fixed;
 }
 a{
     text-decoration: none;
@@ -89,4 +89,9 @@ h1 {
     font-weight: bold;
     color: #e32323;
    
+}
+h1{
+    background-color: rgba(117, 31, 30, 0.788);
+    padding: 20px;
+    border-radius: 15px;
 }
