@@ -1,14 +1,20 @@
 html, body{
     height: 95%;
     width: 99.5%;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/tomatoespls.png');
 }
 .header-style{
     width:90%;
     margin-left: 5%;
     margin-right: 5%;
     height: 6%;
-    border: 1px solid red;
+    border: 4px solid rgb(182, 0, 0);
     border-radius: 5px;
+    background-color: rgba(117, 31, 30, 0.788);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main{
     width:90%;
@@ -16,6 +22,12 @@ html, body{
     margin-right: 5%;
     margin-top: 0.5%;
     height: 90%;
-    border: 1px solid red;
     border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
