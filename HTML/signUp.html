@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     
-    <title>SignUp new user</title>
+    <title>Registracija</title>
 </head>
 <body>
     <header class='header-style'>
@@ -17,22 +17,24 @@
         <a href="/html/addNewMovie.html">Pridėti Filmą</a>
     </header>
     <div class="main">
-
-        <h2>Vartotojo registracija</h2>
-        <form id="signUpForm">
-            <label for="inputName">Jūsų vardas:</label>
-            <input type="text" id="inputName" required><br>
-    
-            <label for="inputPassword">Sukurkite slaptažodį(min 6 simboliai iš raidžių ir skaičių):</label>
-            <input type="password" id="inputPassword" 
-            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required><br>
-    
-            <label for="inputEmail">Jūsų el.p.:</label>
-            <input type="email" id="inputEmail" required><br>
-    
-            <input type="submit" value="Registruotis!">
-        </form>
-
+        <div class="form-header">
+            <h1>Vartotojo registracija</h1>
+        </div>
+        <div class="form-container">
+            <form id="signUpForm">
+                <label for="inputName">Jūsų vardas:</label><br>
+                <input type="text" id="inputName" required><br>
+        
+                <label for="inputPassword">Sukurkite slaptažodį<br>(min 6 simboliai iš raidžių ir skaičių):</label><br>
+                <input type="password" id="inputPassword" 
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required><br>
+        
+                <label for="inputEmail">Jūsų el.p.:</label><br>
+                <input type="email" id="inputEmail" required><br>
+        
+                <input type="submit" id="sumbit-btn" value="Registruotis!">
+            </form>
+        </div>
     </div>
     <script type="text/javascript" src="/JS/userSignUp.js"></script>
 </body>

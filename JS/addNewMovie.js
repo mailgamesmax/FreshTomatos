@@ -13,5 +13,6 @@ movieForm.addEventListener("submit", (e) => {
     let allMovies = JSON.parse(localStorage.getItem("allMovies"));
     allMovies.push(newMovie);
     localStorage.allMovies = JSON.stringify(allMovies);
+    alert("Filmas pridėtas!");
 });
 
