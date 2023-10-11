@@ -11,42 +11,42 @@ window.addEventListener("load", () => {
         name: "Lord Of The Rings",
         rating: "9.8",
         genre: "Fantasy/Adventure",
-        imagePath: "image"
+        imagePath: "/images/lord.jpg"
     };
     
     let interstellar = {
         name: "Interstellar",
         rating: "9.9",
         genre: "Sci-fi/Adventure",
-        imagePath: "image"
+        imagePath: "/images/inter.jpg"
     };
     
     let seven = {
         name: "Seven",
         rating: "9.7",
         genre: "Crime/Mystery",
-        imagePath: "image"
+        imagePath: "/images/seven.jpg"
     };
     
     let darkKnight = {
         name: "Dark Knight",
         rating: "9.9",
         genre: "Action/Adventure",
-        imagePath: "image"
+        imagePath: "/images/the.jpg"
     };
     
     let oppenheimer = {
         name: "Oppenheimer",
         rating: "9.6",
         genre: "Drama/History",
-        imagePath: "image"
+        imagePath: "/images/open.jpg"
     };
     
     let theRoom = {
         name: "The Room",
         rating: "999",
         genre: "Masterpiece",
-        imagePath: "image"
+        imagePath: "/images/room.jpg"
     };
 
 
@@ -63,4 +63,7 @@ window.addEventListener("load", () => {
     localStorage.allMovies = JSON.stringify(allMovies);
     localStorage.allRegisteredTomatosUsers = JSON.stringify(allRegisteredTomatosUsers);
     console.log("Local Storage filled");
+
+    let moviesCount = allMovies.length;
+    localStorage.moviesCount = moviesCount;
 });
