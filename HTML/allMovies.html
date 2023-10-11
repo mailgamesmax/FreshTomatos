@@ -8,68 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     
-    <title>Moviesorter</title>
+    <title>Visi Filmai</title>
 </head>
 <body>
     <header class='header-style'>
         <a href="/html/homepage.html">Pagrindinis</a>
         <a href="/html/addNewMovie.html">Pridėti Filmą</a>
-        <a href="/html/signUp.html">Prisijungti/Registracija</a>
+        <a href="/html/userLoginForm.html">Prisijungti</a>
+        <a href="/html/signUp.html">Registracija</a>
     </header>
     <div class="main">
         <h1>Filmų Įvertinimai</h1>
 
     </div>
-    <select id="genreSelector">
-        <option value="all">All Genres</option>
-        <option value="Action/Adventure">Action/Adventure</option>
-        <option value="Fantasy/Adventure">Fantasy/Adventure</option>
-        <option value="Drama/History">Drama/History</option>
-        <option value="Sci-fi/Adventure">Sci-fi/Adventure</option>
-        <option value="Crime/Mistery">Crime/Mistery</option>
-      </select>
-      <button onclick="sortMovies()">Sort by Rating</button>
-      <div class="main"></div>
     <script src="/JS/allMovies.js"></script>
-    <script>
-
-        let allMovies = JSON.parse(localStorage.getItem("allMovies"));
-        let main_container = document.querySelector(".main");
-    
-        function displayAllMovies(movies) {
-          main_container.innerHTML = "";
-          for (let movie in movies) {
-            main_container.innerHTML += `
-              <div class="movie-card">
-                <div class="movie-details">
-                  <h2>${movies[movie].name}</h2>
-                  <p>Žanras: ${movies[movie].genre}</p>
-                  <div class="movie-rating">
-                    Įvertinimas: ${movies[movie].rating}
-                  </div>
-                </div>
-                <img src="${movies[movie].imagePath}" alt="${movies[movie].name}">
-              </div>`;
-          }
-        }   
-
-        function sortMovies() {
-          const genreSelector = document.getElementById("genreSelector");
-          const selectedGenre = genreSelector.value;
-    
-          let sortedMovies;
-          if (selectedGenre === "all") {
-            sortedMovies = Object.values(allMovies).sort((a, b) => b.rating - a.rating);
-          } else {
-            sortedMovies = Object.values(allMovies)
-              .filter(movie => movie.genre === selectedGenre)
-              .sort((a, b) => b.rating - a.rating);
-          }
-    
-          displayMovies(sortedMovies);
-        }
-    
-        displayMovies(allMovies);
-      </script>
 </body>
 </html>
