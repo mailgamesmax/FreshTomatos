@@ -2,6 +2,7 @@ html, body{
     height: 95%;
     width: 99.5%;
     font-family: 'Roboto', sans-serif;
+    color: yellow;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/tomatoespls.png');
 }
 .header-style{
@@ -15,6 +16,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: yellow;
 }
 .main{
     width:90%;
@@ -22,6 +24,7 @@ html, body{
     margin-right: 5%;
     margin-top: 0.5%;
     height: 90%;
+    color: yellow;
     border-radius: 5px;
 }
 a{
